@@ -1,0 +1,216 @@
+:root {
+    --dark-color:#35261c;
+    --medium-color:#575e45;
+    --medium-transparent: #575e455d;
+    --ligth-color:#c4bab3;
+    --light-transparent: #c4bab377;
+
+}
+
+
+
+@font-face {
+    font-family: Tiro;
+    src: url('../fonts/TiroTelugu-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--ligth-color);
+    text-align: center;
+    font-family: Tiro;
+}
+
+.intro-image {
+    background-attachment: fixed;
+    background-image: url('../image/pexels-anatolii-kiriak-722427.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: relative;
+
+}
+
+.intro-image__link {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+
+}
+
+.intro-image__link a {
+    border: 2px solid var(--dark-color);
+    display: inline-block;
+    background-color: var(--light-transparent);
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--dark-color);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.intro-image__link a:hover, .quality-image__link a:hover, .origin-image__link a:hover {
+    transform: scale(1.1);
+    
+}
+
+.intro-text {
+    display: flex;
+    background-color: var(--dark-color);
+    color: var(--ligth-color);
+    height: 250px;
+    padding: 0 15rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-text h3 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+
+.quality-image {
+    background-attachment: fixed;
+    background-image: url('../image/pexels-saara-karoliina-2757055.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.quality-image__link a {
+    border: 2px solid var(--ligth-color);
+    display: inline-block;
+    background-color: var(--medium-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--ligth-color);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.quality-image__link {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.quality-text {
+    display: flex;
+    background-color: var(--medium-color);
+    color: var(--ligth-color);
+    height: 250px;
+    padding: 0 15rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.quality-text h3 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.origin-image {
+    background-attachment: fixed;
+    background-image: url('../image/pexels-pixabay-247599.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.origin-image__link a {
+    border: 2px solid var(--medium-color);
+    display: inline-block;
+    background-color: var(--ligth-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--medium-color);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.origin-image__link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.origin-text {
+    display: flex;
+    background-color: var(--ligth-color);
+    color: var(--medium-color);
+    height: 250px;
+    padding: 0 15rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.origin-text h3 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.footer {
+    height: 250px;
+    background-color: var(--dark-color);
+    color: var(--medium-color);
+    font-size: 1.3rem;
+
+}
+
+.contact {
+    padding-top: 2rem;    
+
+}
+
+.contact ul li {
+    display: inline-block;
+    margin: 1rem;
+   
+}
+
+.contact ul li a {
+    text-decoration: none;
+    color: var(--medium-color);
+    transition: all 0.5s ease-in-out;
+}
+
+.contact ul li a:hover {
+    color: var(--ligth-color);
+
+}
+
+.footer p{
+    margin-top: 2rem;
+}
+
